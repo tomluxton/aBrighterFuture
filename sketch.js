@@ -69,7 +69,6 @@ function setup() {
   //or "prev
   setImages();
   //sets video var to the webcam video, then hides it.
-  //DISPLAYING VIDEO
   video = createCapture(VIDEO);
   video.size(width/vScale, height/vScale);
   video.hide();
@@ -78,7 +77,6 @@ function setup() {
   createArray1();
 }
 
-//DATA FILES 
 //proof() uses two for loops to go through rows and coloums of a .csv
 //files and then prints each tab in the console.
 function proof(){
@@ -133,12 +131,6 @@ function imageOverlay(){
   image(imgs[1],0,0,width,height-20)
 }
 
-//IF STATMENTS
-//FOR LOOPS
-//ARRAY
-//DRAWING IMAGES
-//ANIMATION
-//TRANSITIONS 
 //squares detects goes through two forloops scanning the video for
 //rgb values. If rgb values are high var bright will be height
 //which is maped to the same scale as vScale. This new value is used
@@ -172,7 +164,6 @@ function squaresDetect(){
   }
 }
 
-//TEXT DISPLAY
 //Next image creats the visuals for the arrays which are to be 
 //pressed to incur the next and previous images
 //also the text is from the table.
@@ -193,9 +184,6 @@ function nextImage(){
   text(table.getString(6,1),width-50, height/2 + 35);
 }
 
-//DRAWING IMAGES
-//INTERACTIVITY 
-//PLAYING SOUND
 //IF mouse is pressed where the next array is the imgNum is
 //increased and the replaceImg is increased to set the new images
 //as the images shown.
